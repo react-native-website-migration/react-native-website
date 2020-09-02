@@ -338,7 +338,7 @@ module.exports = {
       {
         docs: {
           remarkPlugins: [
-            RemarkPlugins.SnackPlayer,
+            // RemarkPlugins.SnackPlayer,
             RemarkPlugins.ReactNativeWebPlayer,
           ],
           homePageId: 'getting-started',

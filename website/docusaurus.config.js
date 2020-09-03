@@ -12,9 +12,9 @@ module.exports = {
     'https://platform.twitter.com/widgets.js',
     'https://buttons.github.io/buttons.js',
     '/js/codeblocks.js',
-    '/js/tabs.js',
+    // '/js/tabs.js',
     '/js/docs-rating.js',
-    '/js/announcement.js',
+    // '/js/announcement.js',
   ],
   favicon: 'img/favicon.ico',
   customFields: {

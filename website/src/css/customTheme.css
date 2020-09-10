@@ -8,4 +8,154 @@
   --subtle: #6d6d6d;
   --divider: #ececec;
   --tintColor: #f7f7f7;
+  --ifm-font-size-base: 17px;
+  --ifm-spacing-horizontal: 20px;
+  --ifm-menu-link-padding-horizontal: 12px;
+  --ifm-toc-padding-vertical: 6px;
+  --ifm-code-font-size: 85%;
+}
+
+/* Pages content overrides */
+
+.main-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.main-wrapper main {
+  /*min-width: 100%;*/
+  padding-left: 8px;
+}
+
+.navbar__inner {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.markdown blockquote {
+  background-color: rgba(255, 229, 100, 0.3);
+  border-left: 8px solid #ffe564;
+  padding: 15px 30px 15px 15px;
+  color: var(--text);
+}
+
+/* Sidebar overrides */
+
+.menu__list .menu__link {
+  font-size: 15px;
+  color: inherit;
+}
+
+.menu__list .menu__list .menu__link {
+  font-size: 13px;
+  padding: 3px 12px;
+  font-weight: normal;
+}
+
+.menu__list .menu__link--sublist {
+  font-size: 14px !important;
+  padding: 5px 12px !important;
+}
+
+.menu__list .menu__link--sublist,
+.menu__list .menu__link--active {
+  font-weight: 500 !important;
+}
+
+.menu__list .menu__link--active.active {
+  color: var(--ifm-menu-color-active) !important;
+}
+
+.menu__link--sublist:after {
+  background-size: 1.66rem 1.66rem;
+}
+
+/* TOC overrrides */
+.table-of-contents .table-of-contents__link {
+  font-size: 12px;
+  display: block;
+}
+
+.table-of-contents .table-of-contents__link code {
+  background: none;
+  padding: 0;
+}
+
+.table-of-contents .table-of-contents__link--active {
+  font-weight: 500;
+  margin-left: -16px;
+  padding-left: 12px;
+  color: var(--text);
+  border-left: 4px solid var(--brand);
+}
+
+/* Footer overrides */
+
+.footer--dark {
+  --ifm-footer-background-color: #20232a;
+}
+
+.footer .container {
+  max-width: 900px;
+}
+
+.footer__item {
+  font-size: 15px;
+}
+
+.footer__title {
+  color: #6a6f7c;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.footer .text--center {
+  color: #6a6f7c;
+  font-size: 13px;
+}
+
+/* Announcement banner overrides */
+
+:root {
+  --docusaurus-announcement-bar-height: auto !important;
+}
+
+.announcement {
+  color: #fff;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 8px 30px;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+}
+
+.announcement-inner {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.announcement a {
+  text-decoration: underline;
+  display: inline-block;
+  color: var(--brand) !important;
+}
+
+.announcement a:hover {
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .announcement {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .announcement {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 6px 30px;
+  }
 }

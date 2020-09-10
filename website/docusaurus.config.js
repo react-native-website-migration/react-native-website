@@ -355,10 +355,12 @@ module.exports = {
   plugins: [],
   themeConfig: {
     announcementBar: {
-      id: 'blm_banner', // Any value that will identify this message.
+      id: 'blm',
+      backgroundColor: '#242526',
+      textColor: '#fff',
       content:
-        'Black Lives Matter. <a href="https://support.eji.org/give/153413/#!/donation/checkout">Support the Equal Justice Initiative.</a>',
-      backgroundColor: '#fafbfc', // Defaults to `#fff`.
+        '<div class="announcement">Black Lives Matter. <a target="_blank" rel="noopener noreferrer" href="https://support.eji.org/give/153413/#!/donation/checkout">Support the Equal Justice Initiative</a>.</div>',
+      isCloseable: false,
     },
     navbar: {
       title: 'React Native',
@@ -367,40 +369,35 @@ module.exports = {
       },
       items: [
         {
-          type: 'docsVersion',
-          position: 'left',
-          to: '/versions',
-        },
-        {
           to: 'docs/',
           label: 'Docs',
-          position: 'left',
+          position: 'right',
         },
         {
           to: 'docs/components-and-apis',
           label: 'Components',
-          position: 'left',
+          position: 'right',
         },
         {
           to: 'docs/accessibilityinfo',
           label: 'API',
-          position: 'left',
+          position: 'right',
         },
         {
           to: '/help',
           label: 'Community',
-          position: 'left',
+          position: 'right',
         },
         {
           to: '/blog',
           label: 'Blog',
-          position: 'left',
+          position: 'right',
         },
 
         {
           label: 'Version',
-          to: 'docs',
-          position: 'right',
+          to: '/versions', //TODO
+          position: 'left',
           items: [
             {
               label: '0.63',

@@ -360,6 +360,9 @@ module.exports = {
   ],
   plugins: [],
   themeConfig: {
+    prism: {
+      additionalLanguages: ['objectivec', 'swift', 'java'],
+    },
     announcementBar: {
       id: 'blm_banner', // Any value that will identify this message.
       content:

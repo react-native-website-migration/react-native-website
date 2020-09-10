@@ -33,6 +33,12 @@
   color: var(--text);
 }
 
+.markdown hr {
+  border: 0;
+  height: 0.01rem;
+  background-color: var(--ifm-hr-border-color);
+}
+
 /* Navbar overrides */
 
 .navbar__inner {
@@ -43,6 +49,10 @@
 .navbar__item.navbar__link {
   font-weight: 400;
   font-size: 18px;
+}
+
+.navbar__item.dropdown a {
+  font-size: 14px;
 }
 
 .DocSearch-Button-Placeholder,

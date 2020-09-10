@@ -395,7 +395,7 @@ module.exports = {
         },
         {
           type: 'docsVersionDropdown',
-          to: '/versions', // TODO
+          // TODO: to: '/versions',
           position: 'left',
         },
         {

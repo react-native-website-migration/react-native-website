@@ -393,35 +393,10 @@ module.exports = {
           label: 'Blog',
           position: 'right',
         },
-
         {
-          label: 'Version',
-          to: '/versions', //TODO
+          type: 'docsVersionDropdown',
+          to: '/versions', // TODO
           position: 'left',
-          items: [
-            {
-              label: '0.63',
-              to: 'docs/',
-              activeBaseRegex: 'docs/(?!0.60|0.61|0.62|0.63|next)',
-            },
-            {
-              label: '0.62',
-              to: 'docs/0.62/',
-            },
-            {
-              label: '0.61',
-              to: 'docs/0.61/',
-            },
-            {
-              label: '0.60',
-              to: 'docs/0.60/',
-            },
-            {
-              label: 'Master/Unreleased',
-              to: 'docs/next/',
-              activeBaseRegex: 'docs/next/(?!support|team|resources)',
-            },
-          ],
         },
         {
           href: 'https://github.com/facebook/react-native',

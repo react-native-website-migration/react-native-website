@@ -13,6 +13,8 @@
   --ifm-menu-link-padding-horizontal: 12px;
   --ifm-toc-padding-vertical: 6px;
   --ifm-code-font-size: 85%;
+  --ifm-blockquote-color: var(--ifm-font-color-base);
+  --ifm-link-hover-decoration: none;
 }
 
 /* Pages content overrides */
@@ -23,20 +25,42 @@
 }
 
 .main-wrapper main {
-  padding-left: 8px;
+  padding-left: 12px;
 }
 
 .markdown blockquote {
   background-color: rgba(255, 229, 100, 0.3);
   border-left: 8px solid #ffe564;
   padding: 15px 30px 15px 15px;
-  color: var(--text);
 }
 
 .markdown hr {
   border: 0;
   height: 0.01rem;
   background-color: var(--ifm-hr-border-color);
+}
+
+.markdown a {
+  display: initial;
+  color: var(--ifm-font-color-base);
+  background-color: rgba(187, 239, 253, 0.3);
+  line-height: calc(var(--ifm-font-size-base) + 4px);
+  border-bottom: 1px solid var(--ifm-hr-border-color);
+}
+
+.markdown a:hover {
+  background-color: rgba(187, 239, 253, 0.6);
+}
+
+.markdown .hash-link {
+  background-color: transparent;
+  border-bottom: 0;
+  color: var(--subtle);
+}
+
+.markdown .hash-link:hover {
+  background-color: transparent;
+  color: var(--brand);
 }
 
 /* Navbar overrides */
@@ -72,7 +96,7 @@
 
 .menu__list .menu__link {
   font-size: 15px;
-  color: inherit;
+  color: var(--ifm-font-color-base);
 }
 
 .menu__list .menu__list .menu__link {
@@ -114,8 +138,12 @@
   font-weight: 500;
   margin-left: -16px;
   padding-left: 12px;
-  color: var(--text);
+  color: var(--ifm-font-color-base);
   border-left: 4px solid var(--brand);
+}
+
+.table-of-contents .table-of-contents__link--active code {
+  color: var(--ifm-font-color-base);
 }
 
 /* Footer overrides */

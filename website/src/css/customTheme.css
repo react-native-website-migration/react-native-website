@@ -18,11 +18,34 @@
   --ifm-navbar-background-color: var(--deepdark);
 }
 
+html[data-theme="light"] {
+  --ifm-code-background: rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="dark"] {
+  --ifm-code-background: rgba(255, 255, 255, 0.06);
+  --ifm-toc-border-color: var(--dark);
+  --ifm-color-emphasis-300: var(--dark);
+  --ifm-hr-border-color: var(--dark);
+}
+
 /* Pages content overrides */
 
 .main-wrapper {
   max-width: 1400px;
-  margin: 0 auto;
+  width: 1400px;
+  align-self: center;
+}
+
+@media (max-width: 1416px) {
+  .main-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 100% !important;
+  }
 }
 
 .main-wrapper main {
@@ -36,7 +59,7 @@
 }
 
 .markdown blockquote code {
-  background-color: rgba(27, 31, 35, 0.07);
+  background-color: rgba(255, 255, 255, 0.09);
 }
 
 .markdown a code,
@@ -62,6 +85,16 @@
   background-color: rgba(187, 239, 253, 0.6);
 }
 
+html[data-theme="dark"] .markdown a {
+  background-color: rgb(97, 218, 251, 0.12);
+  border-bottom-color: rgb(97, 218, 251, 0.3);
+}
+
+html[data-theme="dark"] .markdown a:hover {
+  background-color: rgb(97, 218, 251, 0.4);
+  border-bottom-color: var(--brand);
+}
+
 .markdown .hash-link {
   background-color: transparent;
   border-bottom: 0;
@@ -78,8 +111,8 @@ article .badge {
 }
 
 html[data-theme="dark"] article .badge {
-  background: var(--light);
-  border-color: var(--light);
+  background: var(--deepdark);
+  border-color: var(--deepdark);
   color: var(--ifm-font-color-base);
 }
 
@@ -118,6 +151,11 @@ html[data-theme="dark"] article .badge {
 
 /* Sidebar overrides */
 
+div[class^="docSidebarContainer"] {
+  width: 284px;
+  min-width: 284px;
+}
+
 .menu__list .menu__link {
   font-size: 15px;
   color: var(--ifm-font-color-base);
@@ -148,6 +186,7 @@ html[data-theme="dark"] article .badge {
 }
 
 /* TOC overrrides */
+
 .table-of-contents .table-of-contents__link {
   font-size: 12px;
   display: block;
@@ -290,18 +329,18 @@ div[class^="announcementBarContent"] {
 }
 
 html[data-theme="dark"] .banner-native-code-required {
-  background: #6775b3;
-  border-left-color: #322c83;
+  background: #8491cbb5;
+  border-left-color: #34316c;
 }
 
 html[data-theme="dark"] .banner-native-code-required h2:before,
 html[data-theme="dark"] .banner-native-code-required h3:before {
-  background-color: #322c83;
+  background-color: #34316c;
 }
 
 html[data-theme="dark"] .banner-native-code-required h2,
 html[data-theme="dark"] .banner-native-code-required h3 {
-  color: #fff;
+  color: #34316c;
 }
 
 html[data-theme="dark"] .banner-native-code-required code {

@@ -162,13 +162,19 @@
 
 .footer__title {
   color: #6a6f7c;
+  font-size: 14px;
   font-weight: 500;
   margin: 0 0 8px;
+  text-transform: uppercase;
 }
 
 .footer .text--center {
   color: #6a6f7c;
   font-size: 13px;
+}
+
+.footer__col {
+  margin: 0 20px;
 }
 
 /* Announcement banner overrides */

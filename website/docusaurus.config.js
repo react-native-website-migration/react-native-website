@@ -362,6 +362,9 @@ module.exports = {
         '<div class="announcement">Black Lives Matter. <a target="_blank" rel="noopener noreferrer" href="https://support.eji.org/give/153413/#!/donation/checkout">Support the Equal Justice Initiative</a>.</div>',
       isCloseable: false,
     },
+    prism: {
+      defaultLanguage: 'jsx',
+    },
     navbar: {
       title: 'React Native',
       logo: {
@@ -410,7 +413,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'DOCS',
+          title: 'Docs',
           items: [
             {
               label: 'Getting Started',
@@ -431,7 +434,7 @@ module.exports = {
           ],
         },
         {
-          title: 'COMMUNITY',
+          title: 'Community',
           items: [
             {
               label: 'The React Native Community',
@@ -457,7 +460,7 @@ module.exports = {
           ],
         },
         {
-          title: 'MORE RESOURCES',
+          title: 'More Resources',
           items: [
             {
               label: 'Blog',

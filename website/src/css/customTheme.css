@@ -15,6 +15,7 @@
   --ifm-code-font-size: 85%;
   --ifm-blockquote-color: var(--ifm-font-color-base);
   --ifm-link-hover-decoration: none;
+  --ifm-navbar-background-color: var(--deepdark);
 }
 
 /* Pages content overrides */
@@ -83,6 +84,10 @@ html[data-theme="dark"] article .badge {
 }
 
 /* Navbar overrides */
+
+.navbar--dark {
+  background-color: var(--deepdark);
+}
 
 .navbar__inner {
   max-width: 1360px;
@@ -212,11 +217,11 @@ html[data-theme="dark"] article .badge {
   text-align: center;
   height: 60px;
   width: 100%;
+  background-color: var(--deepdark);
 }
 
-.announcement-inner {
-  margin: 0 auto;
-  max-width: 768px;
+div[class^="announcementBarContent"] {
+  background-color: var(--deepdark);
 }
 
 .announcement a {

@@ -370,6 +370,7 @@ module.exports = {
       logo: {
         src: 'img/header_logo.svg',
       },
+      style: 'dark',
       items: [
         {
           to: 'docs/',

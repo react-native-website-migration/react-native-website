@@ -1,15 +1,24 @@
 var theme = {
   plain: {
-    color: '#839496',
+    color: '#FFFFFF',
     background: '#282C34',
   },
   styles: [
+    // other modifications
+    {
+      types: ['property'],
+      style: {
+        color: '#2aa198',
+      },
+    },
+    // solarized-dark theme
     {
       types: ['attr-name', 'comment', 'prolog', 'doctype', 'cdata'],
       style: {
-        color: '#93a1a1' /* base1 */,
+        color: '#93a1a1',
       },
     },
+
     {
       types: ['punctuation'],
       style: {
@@ -23,21 +32,13 @@ var theme = {
       },
     },
     {
-      types: ['property', 'boolean', 'number', 'constant', 'symbol', 'deleted'],
+      types: ['deleted'],
       style: {
         color: '#d33682' /* magenta */,
       },
     },
     {
-      types: [
-        'attr-value',
-        'selector',
-        'string',
-        'char',
-        'builtin',
-        'url',
-        'inserted',
-      ],
+      types: ['selector', 'char', 'builtin', 'url', 'inserted'],
       style: {
         color: '#2aa198' /* cyan */,
       },
@@ -49,19 +50,13 @@ var theme = {
       },
     },
     {
-      types: ['atrule', 'keyword'],
+      types: ['atrule'],
       style: {
         color: '#859900' /* yellow */,
       },
     },
     {
-      types: ['tag', 'function'],
-      style: {
-        color: '#268bd2' /* blue */,
-      },
-    },
-    {
-      types: ['regex', 'important', 'variable'],
+      types: ['important', 'variable'],
       style: {
         color: '#cb4b16' /* orange */,
       },
@@ -82,6 +77,49 @@ var theme = {
       types: ['entity'],
       style: {
         cursor: 'help',
+      },
+    },
+    // react-native theme
+    {
+      types: ['attr-name', 'keyword'],
+      style: {
+        color: '#c5a5c5',
+      },
+    },
+    {
+      types: ['string', 'regex', 'attr-value'],
+      style: {
+        color: '#8dc891',
+      },
+    },
+    {
+      types: ['number', 'constant', 'symbol'],
+      style: {
+        color: '#5a9bcf',
+      },
+    },
+    {
+      types: ['boolean'],
+      style: {
+        color: '#ff8b50',
+      },
+    },
+    {
+      types: ['class-name'],
+      style: {
+        color: '#fac863',
+      },
+    },
+    {
+      types: ['function'],
+      style: {
+        color: '#79b6f2',
+      },
+    },
+    {
+      types: ['operator', 'tag'],
+      style: {
+        color: '#fc929e',
       },
     },
   ],

@@ -1,104 +1,87 @@
 var theme = {
   plain: {
-    color: '#d6deeb',
-    backgroundColor: '#011627',
+    color: '#839496',
+    background: '#282C34',
   },
   styles: [
     {
-      types: ['changed'],
+      types: ['attr-name', 'comment', 'prolog', 'doctype', 'cdata'],
       style: {
-        color: 'rgb(162, 191, 252)',
-        fontStyle: 'italic',
+        color: '#93a1a1' /* base1 */,
       },
     },
     {
-      types: ['deleted'],
-      style: {
-        color: 'rgba(239, 83, 80, 0.56)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['inserted', 'attr-name'],
-      style: {
-        color: 'rgb(173, 219, 103)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['comment'],
-      style: {
-        color: 'rgb(99, 119, 119)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['string', 'url'],
-      style: {
-        color: 'rgb(173, 219, 103)',
-      },
-    },
-    {
-      types: ['variable'],
-      style: {
-        color: 'rgb(214, 222, 235)',
-      },
-    },
-    {
-      types: ['number'],
-      style: {
-        color: 'rgb(247, 140, 108)',
-      },
-    },
-    {
-      types: ['builtin', 'char', 'constant', 'function'],
-      style: {
-        color: 'rgb(130, 170, 255)',
-      },
-    },
-    {
-      // This was manually added after the auto-generation
-      // so that punctuations are not italicised
       types: ['punctuation'],
       style: {
-        color: 'rgb(199, 146, 234)',
-      },
-    },
-    {
-      types: ['selector', 'doctype'],
-      style: {
-        color: 'rgb(199, 146, 234)',
-        fontStyle: 'italic',
-      },
-    },
-    {
-      types: ['class-name'],
-      style: {
-        color: 'rgb(255, 203, 139)',
-      },
-    },
-    {
-      types: ['tag', 'operator', 'keyword'],
-      style: {
-        color: 'rgb(127, 219, 202)',
-      },
-    },
-    {
-      types: ['boolean'],
-      style: {
-        color: 'rgb(255, 88, 116)',
-      },
-    },
-    {
-      types: ['property'],
-      style: {
-        color: 'rgb(128, 203, 196)',
+        color: '#657b83' /* base00 */,
       },
     },
     {
       types: ['namespace'],
       style: {
-        color: 'rgb(178, 204, 214)',
+        opacity: 0.7,
+      },
+    },
+    {
+      types: ['property', 'boolean', 'number', 'constant', 'symbol', 'deleted'],
+      style: {
+        color: '#d33682' /* magenta */,
+      },
+    },
+    {
+      types: [
+        'attr-value',
+        'selector',
+        'string',
+        'char',
+        'builtin',
+        'url',
+        'inserted',
+      ],
+      style: {
+        color: '#2aa198' /* cyan */,
+      },
+    },
+    {
+      types: ['entity'],
+      style: {
+        color: '#2aa198' /* cyan */,
+      },
+    },
+    {
+      types: ['atrule', 'keyword'],
+      style: {
+        color: '#859900' /* yellow */,
+      },
+    },
+    {
+      types: ['tag', 'function'],
+      style: {
+        color: '#268bd2' /* blue */,
+      },
+    },
+    {
+      types: ['regex', 'important', 'variable'],
+      style: {
+        color: '#cb4b16' /* orange */,
+      },
+    },
+    {
+      types: ['important', 'bold'],
+      style: {
+        fontWeight: 'bold',
+      },
+    },
+    {
+      types: ['italic'],
+      style: {
+        fontStyle: 'italic',
+      },
+    },
+    {
+      types: ['entity'],
+      style: {
+        cursor: 'help',
       },
     },
   ],

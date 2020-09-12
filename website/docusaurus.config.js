@@ -360,6 +360,11 @@ module.exports = {
         'Black Lives Matter. <a href="https://support.eji.org/give/153413/#!/donation/checkout">Support the Equal Justice Initiative.</a>',
       backgroundColor: '#fafbfc', // Defaults to `#fff`.
     },
+    prism: {
+      defaultLanguage: 'jsx',
+      theme: require('./core/theme'),
+      additionalLanguages: ['objectivec', 'swift', 'java'],
+    },
     navbar: {
       title: 'React Native',
       logo: {

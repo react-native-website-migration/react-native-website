@@ -5,13 +5,13 @@
   --deepdark: #20232a;
   --light: #373940;
   --text: #1a1a1a;
-  --subtle: #6d6d6d;
+  --subtle: #7a7a7a;
   --divider: #ececec;
   --tintColor: #f7f7f7;
   --ifm-font-size-base: 17px;
   --ifm-spacing-horizontal: 16px;
   --ifm-navbar-item-padding-horizontal: 20px;
-  --ifm-menu-link-padding-horizontal: 12px;
+  --ifm-menu-link-padding-horizontal: 0;
   --ifm-toc-padding-vertical: 6px;
   --ifm-code-font-size: 85%;
   --ifm-blockquote-color: var(--ifm-font-color-base);
@@ -184,6 +184,10 @@ html[data-theme="dark"] article .badge {
   margin-bottom: 1px !important;
 }
 
+.navbar .navbar__toggle {
+  color: #fff;
+}
+
 /* Sidebar overrides */
 
 div[class^="docSidebarContainer"] {
@@ -191,34 +195,42 @@ div[class^="docSidebarContainer"] {
   min-width: 284px;
 }
 
-.menu__list .menu__list-item {
-  margin-bottom: 0.2rem;
-  margin-top: 0.2rem;
+.menu__list {
+  margin-bottom: 10px;
 }
 
-.menu__list .menu__link {
-  font-size: 15px;
-  color: var(--ifm-font-color-base);
+.menu__list-item--collapsed .menu__list {
+  margin-bottom: 0;
+}
+
+.menu__list .menu__list-item {
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
 
 .menu__list .menu__list .menu__link {
   font-size: 13px;
   padding: 3px 12px;
   font-weight: normal;
+  color: var(--ifm-font-color-base);
 }
 
 .menu__list .menu__link--sublist {
-  font-size: 14px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
   padding: 5px 12px !important;
+  color: var(--subtle) !important;
 }
 
-.menu__list .menu__link--sublist,
-.menu__list .menu__link--active {
-  font-weight: 500 !important;
+.menu__list .menu__list .menu__link--sublist {
+  font-weight: 600 !important;
+  margin-top: 4px;
 }
 
 .menu__list .menu__link--active.active {
-  color: var(--ifm-menu-color-active) !important;
+  border-left: 4px solid var(--ifm-menu-color-active) !important;
+  font-weight: 700 !important;
+  padding-left: 8px;
 }
 
 .menu__link--sublist:after {

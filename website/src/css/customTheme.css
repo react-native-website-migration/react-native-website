@@ -123,6 +123,10 @@ html[data-theme="dark"] article .badge {
   color: var(--ifm-font-color-base);
 }
 
+.docusaurus-highlight-code-line {
+  background-color: var(--light);
+}
+
 /* Navbar overrides */
 
 .navbar--dark {
@@ -425,10 +429,4 @@ html[data-theme="dark"] .banner-native-code-required h3 {
 
 html[data-theme="dark"] .banner-native-code-required code {
   background-color: rgba(50, 44, 131, 0.33);
-}
-
-/* Codeblock overrides */
-
-.docusaurus-highlight-code-line {
-  background-color: var(--light);
 }

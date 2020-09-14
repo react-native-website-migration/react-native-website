@@ -426,3 +426,9 @@ html[data-theme="dark"] .banner-native-code-required h3 {
 html[data-theme="dark"] .banner-native-code-required code {
   background-color: rgba(50, 44, 131, 0.33);
 }
+
+/* Codeblock overrides */
+
+.docusaurus-highlight-code-line {
+  background-color: var(--light);
+}

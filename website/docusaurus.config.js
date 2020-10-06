@@ -353,7 +353,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: ['docusaurus-plugin-sass', './sitePlugin'],
   themeConfig: {
     prism: {
       defaultLanguage: 'jsx',

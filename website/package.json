@@ -50,8 +50,7 @@
     "docusaurus-plugin-sass": "^0.1.11",
     "highlight.js": "^9.18.3",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "remark-snackplayer": "^0.0.2"
+    "react-dom": "^16.10.2"
   },
   "devDependencies": {
     "@motiz88/react-native-docgen": "0.0.3",

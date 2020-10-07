@@ -4,29 +4,6 @@
 Remark plugin to embed <a href="https://snack.expo.io/">Expo Snack's</a> using Code Blocks 
 </p>
 
-<hr>
-
-<p align="center">
-
-  <a href="https://dev-to-uploads.s3.amazonaws.com/i/2xg59r17v72yvqfb3wu5.jpg">
-    <img src="https://forthebadge.com/images/badges/built-with-love.svg"
-         alt="Javascript">
-  </a>
-
-  <a href="https://dev-to-uploads.s3.amazonaws.com/i/2xg59r17v72yvqfb3wu5.jpg">
-    <img src="https://forthebadge.com/images/badges/made-with-javascript.svg"
-         alt="Javascript">
-  </a>
-</p>
-
-## Installing
-
-`npm install remark-snackplayer`
-
-or
-
-`yarn add remark-snackplayer`
-
 ## Usage
 
 This plugin parses codeblocks with language set as `SnackPlayer` and replaces them with embedded Expo's SnackPlayers, you can also provide parameters along with the codeblock to set some basic details.

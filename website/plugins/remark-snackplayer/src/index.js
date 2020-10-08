@@ -43,26 +43,25 @@ function SnackPlayer() {
                   : 'Example usage';
                 const sampleCode = node.value;
                 const encodedSampleCode = encodeURIComponent(sampleCode);
-                const platform = params.platform ? params.platform : 'ios';
+                const platform = params.platform ? params.platform : 'web';
                 const supportedPlatforms = params.supportedPlatforms
                   ? params.supportedPlatforms
                   : 'ios,android,web';
+                const theme = params.theme ? params.theme : 'light';
 
                 // Generate Node for SnackPlayer
                 const snackPlayerDiv = u('html', {
                   value: dedent`
-                <div class="snack-player">
-                  <div
-                    data-snack-name="${name}"
-                    data-snack-description="${description}"
-                    data-snack-code="${encodedSampleCode}"
-                    data-snack-platform="${platform}"
-                    data-snack-supported-platforms="${supportedPlatforms}"
-                    data-snack-preview="true"
-                    style="overflow:hidden;background:#fafafa;border:1px solid rgba(0,0,0,.08);border-radius:4px;height:505px;width:100%"
-                    >
-                  </div>
-                </div>
+                <div 
+                  class="snack-player"
+                  data-snack-name="${name}"
+                  data-snack-description="${description}"
+                  data-snack-code="${encodedSampleCode}"
+                  data-snack-platform="${platform}"
+                  data-snack-supported-platforms="${supportedPlatforms}"
+                  data-snack-theme="${theme}"
+                  data-snack-preview="true"
+                ></div>
                 `,
                 });
 
@@ -78,17 +77,6 @@ function SnackPlayer() {
         }
       });
 
-      // If there is one or more snackplayer(s) present
-      if (nodesToProcess.length) {
-        // To embed.js script
-        const snackPlayerEmbed = u('html', {
-          value: dedent`
-          <script async src="https://snack.expo.io/embed.js"></script>
-          `,
-        });
-
-        tree.children.push(snackPlayerEmbed);
-      }
       // Wait for all promises to be resolved
       Promise.all(nodesToProcess)
         .then(resolve())

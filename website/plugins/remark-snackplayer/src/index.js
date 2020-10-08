@@ -48,11 +48,12 @@ function SnackPlayer() {
                   ? params.supportedPlatforms
                   : 'ios,android,web';
                 const theme = params.theme ? params.theme : 'light';
+                const preview = params.preview ? params.preview : 'true';
 
                 // Generate Node for SnackPlayer
                 const snackPlayerDiv = u('html', {
                   value: dedent`
-                <div 
+                <div
                   class="snack-player"
                   data-snack-name="${name}"
                   data-snack-description="${description}"
@@ -60,7 +61,7 @@ function SnackPlayer() {
                   data-snack-platform="${platform}"
                   data-snack-supported-platforms="${supportedPlatforms}"
                   data-snack-theme="${theme}"
-                  data-snack-preview="true"
+                  data-snack-preview="${preview}"
                 ></div>
                 `,
                 });

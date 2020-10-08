@@ -54,6 +54,7 @@ The above code snippet would look like this on your page
 | platform           | Example platform                         | `"web"`             |
 | supportedPlatforms | Supported platforms                      | `"ios,android,web"` |
 | theme              | SnackPlayer theme, `"light"` or `"dark"` | `"light"`           |
+| preview            | Preview visible, `"true"` or `"false"`   | `"true"`            |
 
 ## Styling
 

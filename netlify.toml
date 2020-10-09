@@ -1,3 +1,4 @@
+# Netlify config
 [build]
   base    = "website"
   publish = "build/react-native"
